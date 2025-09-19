@@ -7,6 +7,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -24,6 +25,12 @@ class SpringWebAppDockerApplicationTests {
 	    mockMvc.perform(get("/hello"))
 	           .andExpect(status().isOk())
 	           .andExpect(content().string("Hello, World!"));
+	}
+
+	@Test
+	public void sampleTest() {
+	    // Sample test case to ensure the context loads
+		assertTrue(true);
 	}
 	
 		
