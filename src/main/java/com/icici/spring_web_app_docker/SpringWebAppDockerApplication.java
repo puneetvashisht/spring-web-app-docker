@@ -10,4 +10,6 @@ public class SpringWebAppDockerApplication {
 		SpringApplication.run(SpringWebAppDockerApplication.class, args);
 	}
 
+	
+
 }

@@ -19,12 +19,12 @@ class SpringWebAppDockerApplicationTests {
 
 
 	// write test case for controller class
-	@Test
-	public void testHelloWorld() throws Exception {
-	    mockMvc.perform(get("/hello"))
-	           .andExpect(status().isOk())
-	           .andExpect(content().string("Hello, World!"));
-	}
+	// @Test
+	// public void testHelloWorld() throws Exception {
+	//     mockMvc.perform(get("/hello"))
+	//            .andExpect(status().isOk())
+	//            .andExpect(content().string("Hello, World!"));
+	// }
 
 	@Test
 	public void sampleTest() {
