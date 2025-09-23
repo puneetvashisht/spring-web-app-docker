@@ -36,4 +36,9 @@ public class SampleService {
     public String fallbackResponse(Exception ex) {
         return "Fallback response: " + ex.getMessage();
     }
+
+
+    public int divide(int x, int y){
+        return x / y;
+    }
 }
